@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
+      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
+
+      <header class="page-header">
+
+        <!-- You can turn off the avatar in _config.yml by setting to false -->
+        {% if site.resume_avatar == 'true' %}
+        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+        {% endif %}
+
+        <!-- Your name is defined in the _config.yml file -->
+        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+
+        <!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
+        {% if site.display_header_contact_info == 'true' %}
+        <div class="header-contact-info">
+          <p>Address: RM JB210C, College of Electrical Engineering, Sichuan University, Wangjiang Campus, No.24 South Section 1, Yihuan Road, Chengdu , China, 610065<br>
+          Email: harrys9512@gmail.com, jianwensong@stu.scu.edu.cn </p>
+        </div>
+        {% endif %}
+
+        <div class="title-bar no-print">
+
+          <!-- Your title is also defined in the _config.yml file -->
+          <h2 class="header-title" itemprop="jobTitle">Biography</h2>
+
+          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
+          {% include icon-links.html %}
+        </div>
+
+        <div class="executive-summary" itemprop="description">
+      <!--    {{ site.resume_header_intro }}-->
+      <p>I am currently a final year (2017-2020) Master student in the College of Electircal Engineering,
+        Sichuan University, supervised by Pro. <a href="https://scholar.google.com/citations?user=lNIe6CAAAAAJ&hl=zh-CN" style="color: #333">Kai Liu</a>.
+        Previously, I recieved the B. Eng degree from College of Electronics and Information Engineering, Sichuan University in 2017,
+        under the supervision of Prof. <a href="https://scholar.google.com/citations?user=YPP7Ln4AAAAJ&hl=zh-CN" style="color: #333">Wei Wu</a>. </p>
+
+      <p>My research interest focuses on  structured light illumination and image processing. I am dedicated to designing a coded-decoded scheme of structured light to
+       achieve 3D reconstruction of fast speed and high precision. Recently, I am trying to apply convolutional neural network to phase measuring profilometry,
+       one of the efficient structured light methods.</p>
+        </div>
+
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
+
+      </header>
+
+<!-- Awards-->
+    <section class="content-section">
+      <header class="section-header">
+        <h2>Honors & Awards</h2>
+    </header>
+
+    <div class="resume-item-list" itemprop="description">
+      <li>National Scholarship for postgraduate students in China, 2018</li>
+      <li>Excellent Postgraduate Student of Sichuan University, 2018</li>
+      <li>1st Prize Postgraduate Academic Scholarship of Sichuan University, 2017</li>
+      <li>Excellent Undergraduate Thesis of Sichuan University, 2017</li>
+      <li>Excellent Undergraduate Student of Sichuan University, 2016</li>
+      <li>3rd Prize Scholarship of Sichuan University, 2016</li>
+      <li>1st Ship Model Competition of Sichuan University, 2014</li>
+    </div>
+  </section>
+
+<!-- Publications-->
+    <section class="content-section">
+      <header class="section-header">
+        <h2>Publications</h2>
+    </header>
+
+<div class="resume-item-list" itemprop="description">
+<table>
+      <tr>
+        <td width="280" >
+        <img src="./images/PhaseStatue.jpg" width="260" style="box-shadow: 4px 4px 8px #888">
+        </td>
+        <td>
+          <b>Jianwen Song</b>, Daniel L Lau, Yo-Sung Ho, and Kai Liu*, "Automatic look-up table based real-time phase unwrapping for phase measuring profilometry and optimal reference frequency selection", Optics Express, 2019, 27(9): 13357-13371. [<a href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-27-9-13357" style="color: #333">Paper</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td width="280">
+        <img src="./images/method.jpg" width="260" style="box-shadow: 4px 4px 8px #888">
+        </td>
+        <td>
+          Jianwen Song</b>, Yo-Sung Ho, Daniel L Lau, and Kai Liu*, "Universal phase unwrapping for phase measuring profilometry using geometric analysis", Proc. SPIE (Emerging Digital Micromirror Device Based Systems and Applications X), 2018, 10546: 105460B.
+          [<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10546/105460B/Universal-phase-unwrapping-for-phase-measuring-profilometry-using-geometry-analysis/10.1117/12.2289423.short" style="color: #333">Paper</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td width="280">
+        <img src="./images/CNN.jpg" width="260" style="box-shadow: 4px 4px 8px #888">
+        </td>
+        <td>
+          Zhenli, Xiaomin Yang, <b>Jianwen Song</b>, Kai Liu, Zuping Wang, and Wei Wu*, "Improving Resolution of 3D Surface With Convolutional Neural Networks", Sustainable Cities and Society, 2018, 42: 127-138.
+          [<a href="https://www.sciencedirect.com/science/article/pii/S2210670718303676" style="color: #333">Paper</a>]</li>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="280">
+        <img src="./images/structure1.jpg" width="260" style="box-shadow: 4px 4px 8px #888">
+        </td>
+        <td>
+          Kai Liu, <b>Jianwen Song</b>, Daniel L Lau, Xiujuan Zheng, Ce Zhu, and Xiaomei Yang*, "Real-time 3D Reconstruction with Structured Light and Scanning Objects Along Both Horizontal and Vertical Directions", Optics Letters.
+          [Under review]
+        </td>
+      </tr>
+
+      <tr>
+        <td width="280">
+        <img src="./images/structure2.jpg" width="260" style="box-shadow: 4px 4px 8px #888">
+        </td>
+        <td>
+          <b>Jianwen Song</b>, Daniel L Lau, Xiaomin Yang, Bin Xu, and Kai Liu*, "Universal decoding method for periodic patterns in phase shifting structured light illumination", Optics Express.
+          [Preparing]
+        </td>
+      </tr>
+
+</table>
+</div>
+
+
+  </section>
+
+
+<!-- Patents-->
+  <section class="content-section">
+    <header class="section-header">
+      <h2>Patents</h2>
+  </header>
+
+  <div class="resume-item-list" itemprop="description">
+        <li>Kai Liu, <b>Jianwen Song</b>, Jiang Wang, and Yiguang Liu, "Customized projector and projection method based on one-dimensional information", Chinese Patent, <a href="https://patentimages.storage.googleapis.com/fa/b8/77/48b0c53f96afa1/CN105737761B.pdf" style="color: #333">CN105737761B</a>. [Issued]</li>
+        <li>Kai Liu, <b>Jianwen Song</b>, and Han Zhang, "System calibration method, device, and three-dimensional reconstruction system ", Chinese Patent, CN107170010A. [Patent pending]</li>
+        <li>Kai Liu, <b>Jianwen Song</b>, Ziyang Hu, and Bin Xu, "Phase unwrapping method, device and electronic instrument based on two-dimensional look-up table ", Chinese Patent, CN110006365A. [Patent pending]</li>
+  </div>
+
+</section>
+
+      <!-- CV Links -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2><a href="files/jianwensong.pdf" style="color: #333">Curriculum Vitae</a></h2>
+        </header>
+      </section>
+      <!--end Print Social Links -->
+
+<p><center>
+  <div id="clustrmaps-widget" style="width:10%">
+    <script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=k8A2AT_l67rag-gaL7Oe2Spu_HN_4lFqTl4X4cs-Gro"></script>
+    </div>
+
+    <br>
+          &copy; Jianwen Song | Last updated: 24 Aug. 2019
+
+        </center></p>
+
+  </body>
+
+</html>
