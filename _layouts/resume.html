@@ -10,22 +10,17 @@
       <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
       <header class="page-header">
-
-        <!-- You can turn off the avatar in _config.yml by setting to false -->
-        {% if site.resume_avatar == 'true' %}
         <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
-        {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
-        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+        <h1 class="header-name" itemprop="name">Jianwen Song</h1>
 
-        <!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
-        {% if site.display_header_contact_info == 'true' %}
+
         <div class="header-contact-info">
           <p>Address: RM JB210C, College of Electrical Engineering, Sichuan University, Wangjiang Campus, No.24 South Section 1, Yihuan Road, Chengdu , China, 610065<br>
           Email: harrys9512@gmail.com, jianwensong@stu.scu.edu.cn </p>
         </div>
-        {% endif %}
+
 
         <div class="title-bar no-print">
 
@@ -47,33 +42,8 @@
        achieve 3D reconstruction of fast speed and high precision. Recently, I am trying to apply convolutional neural network to phase measuring profilometry,
        one of the efficient structured light methods.</p>
         </div>
-
-
-        {% if site.resume_looking_for_work == 'yes' %}
         <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
-
       </header>
-
-<!-- Awards-->
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Honors & Awards</h2>
-    </header>
-
-    <div class="resume-item-list" itemprop="description">
-      <li>National Scholarship for postgraduate students in China, 2018</li>
-      <li>Excellent Postgraduate Student of Sichuan University, 2018</li>
-      <li>1st Prize Postgraduate Academic Scholarship of Sichuan University, 2017</li>
-      <li>Excellent Undergraduate Thesis of Sichuan University, 2017</li>
-      <li>Excellent Undergraduate Student of Sichuan University, 2016</li>
-      <li>3rd Prize Scholarship of Sichuan University, 2016</li>
-      <li>1st Ship Model Competition of Sichuan University, 2014</li>
-    </div>
-  </section>
 
 <!-- Publications-->
     <section class="content-section">
@@ -134,9 +104,7 @@
 
 </table>
 </div>
-
-
-  </section>
+</section>
 
 
 <!-- Patents-->
@@ -152,6 +120,40 @@
   </div>
 
 </section>
+
+
+<!-- Projects-->
+  <section class="content-section">
+    <header class="section-header">
+      <h2>Projects</h2>
+  </header>
+
+  <div class="resume-item-list" itemprop="description">
+        <li>Multi-functional comprehensive experiment and demonstration system for surface structure light
+                high-speed precision three-dimensional shape measurement. Jun. 2019</li>
+        <li>High-precision structured light 3D imaging for illumination saturation overflow and multipath effects
+                supported by the National Natural Science Foundation of China, Sep.2017-Dec.2018</li>
+  </div>
+
+</section>
+
+
+<!-- Awards-->
+    <section class="content-section">
+      <header class="section-header">
+        <h2>Honors & Awards</h2>
+    </header>
+
+    <div class="resume-item-list" itemprop="description">
+      <li>National Scholarship for postgraduate students in China, 2018</li>
+      <li>Excellent Postgraduate Student of Sichuan University, 2018</li>
+      <li>1st Prize Postgraduate Academic Scholarship of Sichuan University, 2017</li>
+      <li>Excellent Undergraduate Thesis of Sichuan University, 2017</li>
+      <li>Excellent Undergraduate Student of Sichuan University, 2016</li>
+      <li>3rd Prize Scholarship of Sichuan University, 2016</li>
+      <li>1st Ship Model Competition of Sichuan University, 2014</li>
+    </div>
+  </section>
 
       <!-- CV Links -->
       <section class="content-section">
