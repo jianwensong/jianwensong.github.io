@@ -181,8 +181,9 @@
     }
     li {
       @include media_larger_than_mobile { font-size: 1.25rem; }
-      span{float:right;}
+
     }
+      span{float:right;}
   }
 
   .resume-item-copy {font-size: 1.25rem; margin: .75rem 0 0; }
