@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.7.12)  25 AUG 2019 17:14
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.7.12)  26 AUG 2019 17:04
 entering extended mode
 **./jianwensong.tex
 (jianwensong.tex
@@ -190,14 +190,14 @@ Overfull \hbox (0.37592pt too wide) in paragraph at lines 72--73
 
 [1
 
-] [2] [3] (jianwensong.aux) ) 
+] [2] (jianwensong.aux) ) 
 Here is how much of TeX's memory you used:
  1877 strings out of 427748
  26228 string characters out of 3146822
- 109108 words of memory out of 3000000
+ 110108 words of memory out of 3000000
  5929 multiletter control sequences out of 15000+200000
  6427 words of font info for 29 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,4n,23p,900b,188s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on jianwensong.pdf (3 pages).
+Output written on jianwensong.pdf (2 pages).
