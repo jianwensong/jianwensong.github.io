@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.7.12)  2 SEP 2019 14:46
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.7.12)  6 SEP 2019 11:18
 entering extended mode
-**./jianwensong.tex
-(jianwensong.tex
+**./JianwenSong-CV.tex
+(JianwenSong-CV.tex
 LaTeX2e <2018-12-01>
 (resume.cls
 Document Class: resume 2010/07/10 v0.9 Resume class
@@ -115,8 +115,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks17
 
 ("C:\Users\HarryS\AppData\Local\Programs\MiKTeX 2.9\tex/xelatex/xetexconfig\geo
-metry.cfg")) (jianwensong.aux)
-\openout1 = `jianwensong.aux'.
+metry.cfg")) (JianwenSong-CV.aux)
+\openout1 = `JianwenSong-CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
@@ -190,14 +190,14 @@ Overfull \hbox (0.37592pt too wide) in paragraph at lines 72--73
 
 [1
 
-] [2] (jianwensong.aux) ) 
+] [2] (JianwenSong-CV.aux) ) 
 Here is how much of TeX's memory you used:
  1877 strings out of 427748
- 26228 string characters out of 3146822
+ 26258 string characters out of 3146822
  109104 words of memory out of 3000000
  5929 multiletter control sequences out of 15000+200000
  6427 words of font info for 29 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 44i,4n,23p,900b,188s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,4n,23p,903b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on jianwensong.pdf (2 pages).
+Output written on JianwenSong-CV.pdf (2 pages).
